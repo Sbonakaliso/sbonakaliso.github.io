@@ -30,15 +30,22 @@
 <h1 style="text-align:center;font-family:franklin gothic demi;color:rgb(0,162,232);font-size:200%;margin-top:0">I CREATE STUNNING WEBSITES</h1>
 <br>
 <p style="text-align:center">
-<button type="button" data-toggle="modal" data-target=".modal" href="#" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" class="btn">Email</a>
-<div class="modal">
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" data-toggle="modal" data-target="#myModal">Email</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
+
+    <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&close;</button>
-        <h4 class="modal-title">Send me an email</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Email me</h4>
       </div>
       <div class="modal-body">
+        
         <?php
 $action=$_REQUEST['action'];
 if ($action=="")    /* display the contact form */
@@ -73,13 +80,16 @@ else                /* send the submitted data */
         }
     }  
 ?> 
+        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+
   </div>
 </div>
+
 <a href="#" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" class="btn">Facebook</a>
 <a href="#" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" class="btn">Twitter</a>
 </p>
