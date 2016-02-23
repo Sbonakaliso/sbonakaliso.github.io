@@ -1,107 +1,221 @@
 <!doctype html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sbonakaliso's Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css">
+	<title>Journey</title>
+	<link rel="stylesheet" type="text/css" href="bootstylepaper.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.css">
 	<style type="text/css">
-	body{
-		background:url("https://cloud.githubusercontent.com/assets/10979132/13131423/1b19bac8-d5f4-11e5-8565-8480866d7eec.png");
+	html{
+		overflow-x: hidden;
+	}
+	.col-xs-7, .col-xs-2{
+		height: 10000vh;
+		background-image: url("https://cloud.githubusercontent.com/assets/10979132/13240503/bf0554b2-d9eb-11e5-96e2-344c2111ed00.png");
+	}
+	.col-xs-3{
+		height: 10000vh;
+		background-image: url("https://cloud.githubusercontent.com/assets/10979132/13240381/c9a5dd5c-d9ea-11e5-943f-2bc6e68c5e8c.png");
 		background-size: 100%;
 	}
-	#blanket{
-		background:rgba(0,0,0,0.8);
-		background: -webkit-linear-gradient(rgba(0,0,0,0.9),rgba(0,0,100,0.9));
-		background: -o-linear-gradient(rgba(0,0,0,0.9),rgba(0,0,100,0.9));
-		background: -moz-linear-gradient(rgba(0,0,0,0.9),rgba(0,0,100,0.9));
-		background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,100,0.9));
-		margin-top:0;
-		position:absolute;
-		top:0;
-		bottom:0;
-		width:100%
+	#player{
+		position: fixed;
+		top: 30vh;
+		left: 29vw;
+		width: 5vw;
+		/*box-shadow: 0px 30vh 10vw yellow;*/
+	}
+	#intro{
+		background: black;
+		font-size: 140%;
+		padding: 16px;
+		margin: 0;
+		color: yellow;
+		text-align: center;
+	}
+	#logo{
+		position: fixed;
+		top: 100px;
+		right: 0px;
+		background: white;
+		color: red;
+		font-weight: bold;
+		border: solid 2px red;
+		padding: 5px;
+		transform:rotate(-90deg);
+	}
+	body{
+		font-family: calibri light;
+		background: black;
+		}
+	#blue{
+		position: absolute;
+		left: 20vw;
+		top: 230vh;
+		width: 5vw;
+
+	}
+	#green{
+		position: absolute;
+		left: 20vw;
+		top: 630vh;
+		width: 5vw;
+
+	}
+	#truck{
+		position: absolute;
+		left: 20vw;
+		top: 1150vh;
+		width: 5vw;
+
+	}
+	#white{
+		position: absolute;
+		left: 20vw;
+		top: 1600vh;
+		width: 5vw;
+
+	}
+	#gold{
+		position: absolute;
+		left: 20vw;
+		top: 2450vh;
+		width: 5vw;
+
+	}
+	.sign{
+		width: 60px;
+		left: 41vw;
+	}
+	.sign_info{
+		color: white;
+		font-size: 160%;
+		left: 41vw;
+	}
+	.sign_group{
+		background: red;
+	}
+	#overtake{
+		position: absolute;
+		top: 100vh;
+	}
+	#welcome{
+		position: absolute;
+		font-size: 200%;
+		top: 5vh;
+	}
+	#uturn{
+		position: absolute;
+		top: 250vh;
+	}
+	#creativity{
+		position: absolute;
+		top: 120vh;
+	}
+	#quote{
+		position: absolute;
+		top: 400vh
+	}
+	#passion{
+		position: absolute;
+		top: 250vh;
+	}
+	#attend{
+		position: absolute;
+		top: 550vh;
+	}
+	#luyanda{
+		position: absolute;
+		top: 800vh;
+	}
+	#min50_info{
+		position: absolute;
+		top: 415vh;
+	}
+	#note{
+		position: absolute;
+		top: 500vh;
+		font-weight: bold;
+	}
+	#name{
+		font-size: 130%;
+	}	
+	.fa-chevron-down{
+		color: white;
+		position: absolute;
+		left: 30vw;
+		top: 90vh;
+		font-size: 200%;
+		z-index: 9999999;
+	}
+	.ikon{
+		font-size: 300%;
+	}
+	a{
+		color: yellow;
+		text-decoration: underline;
+	}
+	a:hover{
+		background: yellow;
+		color: green;
 	}
 	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			//$("#player").css({"box-shadow","0px 10px 5px gold"})
+		});
+	})
+	</script>
+	</script>
 </head>
 <body>
-<div id="blanket">
-<h3 style="text-align:center;font-family:calibri light;color:rgb(0,162,232);font-size:220%;">I am Sbo Kunene.</h3>
-<p style="text-align:center"><img src="https://cloud.githubusercontent.com/assets/10979132/13131451/492698b4-d5f4-11e5-8a2a-232a525ba79b.jpg" style="width:100px;border-radius:50%;"></p>
-<h1 style="text-align:center;font-family:franklin gothic demi;color:rgb(0,162,232);font-size:200%;margin-top:0">I CREATE STUNNING WEBSITES</h1>
-<br>
-<p style="text-align:center">
-<a href="#" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" class="btn">Facebook</a>
-<a href="#" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" class="btn">Twitter</a>
 
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn" style="background:none;border:solid 1px rgb(0,162,232);color:rgb(0,162,232)" data-toggle="modal" data-target="#myModal">Email</button>
+<div class="row">
+<div class="col-xs-2">
+</div>
+<div class="col-xs-3">
+<i class="fa fa-chevron-down"></i>
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240502/bf032584-d9eb-11e5-9fcc-1792dc163155.png" id="player">
+</div>
+<div class="col-xs-7">
+<canvas id="myCanvas">
+</canvas>
+</div>
+<!--div id="logo">N1 to K-53</div-->
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240501/bf005520-d9eb-11e5-8503-296e5a1f0cc1.png" id="blue">
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240505/bf07447a-d9eb-11e5-9b21-506f12ef9c25.png" id="green">
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240507/bf0a7a00-d9eb-11e5-8d54-9fb188134439.png" id="truck">
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240504/bf060f10-d9eb-11e5-9043-47bf557a9353.png" id="white">
+<img src="https://cloud.githubusercontent.com/assets/10979132/13240506/bf09031e-d9eb-11e5-983e-0d695d9fb7b3.png" id="gold">
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Email me</h4>
-      </div>
-      <div class="modal-body">
-        
-        <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
-    <form  action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    Your name:<br>
-    <input name="name" type="text" value="" size="30"/><br>
-    Your email:<br>
-    <input name="email" type="text" value="" size="30"/><br>
-    Your message:<br>
-    <textarea name="message" rows="7" cols="30"></textarea><br>
-    <input type="submit" value="Send email"/>
-    </form>
-    <?php
-    } 
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("kunenesbonakaliso@gmail.com", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
-?> 
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
-  </div>
+<div class="sign_group">
+<p class="sign_info" id="welcome"><span id="name">Sbonakaliso</span> is a web developer who believes in simplicity.</p>
 </div>
 
-</p>
+<div class="sign_group">
+<p class="sign_info" id="creativity"><span class="ikon"><i class="fa fa-cubes"></i></span><br><b>Structured creativity</b><br>In a past life he was a civil engineering student and he has retained the methodical approach to problem solving, including creativity.</p>
+</div>
 
-<div style="margin-top:0;width:100%;text-align:center;color:rgb(0,162,232);font-size:150%;font-family:calibri light;background:rgba(0,0,0,0.8)">
-Here are some of them
-<div class="raw">
-<div class="col-sm-4" style="font-weight:bold;background:rgba(0,0,100,0.6)">&Attend</div>
-<div class="col-sm-4" style="font-weight:bold;background:rgba(0,0,100,0.6)">Skibha</div>
-<div class="col-sm-4" style="font-weight:bold;background:rgba(0,0,100,0.6)">Dudu's</div>
+<div class="sign_group">
+<p class="sign_info" id="passion"><span class="ikon"><i class="fa fa-heartbeat"></i></span><br><b>Passion for creation</b><br>He has a passion for creating things from the intangible. He's a self-taught web developer who thrives on constant reading, growing and integrating new meaningful concepts to who he is.</p>
 </div>
+
+<div class="sign_group">
+<p class="sign_info" id="quote"><span class="ikon"><i class="fa fa-quote-left"></i></span><br><b>Overactive Imagination</b><br>"Sbonakaliso delivered a simple yet dazzling presentation of my artwork. He has a crazy work ethic" - Luyanda</p>
 </div>
+
+<div class="sign_group">
+<p class="sign_info" id="attend"><span class="ikon"><i class="fa fa-laptop"></i></span><br><b>&Attend - Past work</b><br>He is the creator of the online learning platform <a href="#">&Attend</a> that gives learners from disadvantaged background access to high quality education in South Africa.<br><i class="fa fa-trophy"></i> Challenge: When designing the interface, Sbonakaliso employed the mobile-first approach. The website looked and felt amazing on mobile phones and small tablets but on larger tablets and personal computers, the buttons were oversized and spaned the entire screen. So he researched other methods that simplify responsive design. He found an excellent book by <a href="http://uxpin.com">UXPin</a> recommending the use of a card based interface, this was an appropriate design for the timetable page of the platform.</p>
 </div>
+
+<div class="sign_group">
+<p class="sign_info" id="luyanda"><span class="ikon"><i class="fa fa-paint-brush"></i></span><br><b>Skibha</b><br>A <a href="#">website for an artist</a> who creates custom art from personal photographs.<br><i class="fa fa-trophy"></i> Challenge: Sbonakaliso faced the problem of having too much say on a finite web page, so he turned the problem on it's head and asked himself: "What if I don't tell them how great Luyanda's art is? What if I show them?". He then adopted a minimalistic approach that focused the user's attention the artwork, and not the interface.</p>
+</div>
+
+</div>
+
 </body>
 </html>
