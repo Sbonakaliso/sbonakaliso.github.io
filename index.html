@@ -13,149 +13,137 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<style type="text/css">
-	#carousel{
-		width:80%;
-	}
+<style type="text/css">
 	body{
+		text-align: center;
 		background: black;
+		font-family: century gothic;
+		overflow: hidden;
 	}
-	.fa-fire,.fa-flask{
-		font-size: 200%;
+	.content{
+		position: absolute;
+		width: 100%;
 	}
-	.fa-fire{
-		color: rgb(255,128,0);
+	.content-1{
+		top: 20vh;
 	}
-	.fa-flask{
+	.content-2{
+		top: 120vh;
+	}
+	.content-3{
+		top: 220vh;
+	}
+	.content-4{
+		top: 320vh;
+	}
+	h1{
+		color: inherit;
+	}
+	h3{
+		color: inherit;
+	}
+	h4{
 		color: rgb(128,0,128);
 	}
-	header>h1{
-		font-size: 200%;
-		text-align: right;
-		color: rgb(150,150,150);
-		padding-right: 1em;
+	.green{
+		color: rgb(0,128,0);
 	}
-	.icon{
-		text-align: left;
+	.white{
+		color: rgb(255,255,255);
 	}
-	.words{
-		text-align: center;
+	.black{
+		color: rgb(0,0,0);
 	}
-	.passion{
-		color: rgb(255,128,0);
-		font-family: arial black;
-		font-size: 150%;
-	}
-	.skill{
+	.purple{
 		color: rgb(128,0,128);
-		font-family: arial black;
-		font-size: 150%;
 	}
-	.work{
-		text-align: center;
+	a{
+		font-size: 300%;
+		position: absolute;
+		color: inherit;
 	}
-	.fa-envelope-o{
-		color: rgb(255,128,0);
+	.fa-chevron-circle-down{
+		color: inherit;
 	}
-	.col-sm-3{
-		text-align: center;
+	.fa-chevron-circle-up{
+		left: 1em;
+		color: inherit;
 	}
-	.btn-info, .btn-info:hover,.btn:active{
-		background:none;
-		border:none;
-		padding:0;
-		font-size:130%;
+	.page{
+		height: 100vh;
+	}
+	.page-1{
+		top: 0vh;
+		background: black;
+		color: rgb(128,0,128);
+	}
+	.page-2{
+		background: rgb(0,128,0);
+		color: rgb(0,0,0);
+	}
+	.page-3{
+		background: rgb(128,0,128);
+		color: rgb(255,255,255);
+	}
+	.page-4{
+		background: rgb(255,255,255);
+		color: rgb(0,128,0);
+	}
+	#down1{
+		top: 80vh;
+		right: 1em;
+	}
+	#down2{
+		top: 180vh;
+		right: 1em;
+	}
+	#up2{
+		top: 180vh;
+		left: 1em;
+	}
+	#down3{
+		top: 280vh;
+		right: 1em;
+	}
+	#up3{
+		top: 280vh;
+		left: 1em;
 	}
 	</style>
 </head>
 <body>
-<header><h1>I am Sbonakaliso.   
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope-o"></i></button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><i class="fa fa-child"></i> Feel free to email anytime</h4>
-      </div>
-      <div class="modal-body">
-        <p>KuneneSbonakaliso@gmail.com</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div></h1></header>
-<div class="row">
-<div class="col-sm-3 icon">
-<h1><i class="fa fa-flask"></i></h1>
-<h1><i class="fa fa-fire"></i></h1>
+<div class="page page-1">
+<div class="content content-1" id="page1">
+<h1>I am Sbo</h1>
+<h3>Web developer</h3>
+<h5 class="green">HTML, CSS, Bootstrap, Javascript and jQuery</h5>
 </div>
-<div class="col-sm-9 words">
-<br>
-<h1><span class="passion">Passion.</span> <span class="skill">Skill.</span></h1>
+<a href="#page2" id="down1"><i class="fa fa-chevron-circle-down"></i></a>
 </div>
+<div class="page page-2" id="page2">
+<div class="content content-2">
+<h1>Listening...</h1>
+<h3>and paying attention to your needs</h3>
+<h5 class="white">Sets me apart</h5>
 </div>
-<br>
-<div class="work">
-<h3><i class="fa fa-briefcase"></i> Work</h3>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="attend1.png" alt="&Attend">
-    </div>
-
-    <div class="item">
-      <img src="attend2.png" alt="&Attend">
-    </div>
-
-    <div class="item">
-      <img src="luyanda1.png" alt="Luyanda">
-    </div>
-
-    <div class="item">
-      <img src="luyanda2.png" alt="Luyanda">
-    </div>
-    
-    <div class="item">
-      <img src="luyanda3.png" alt="Luyanda">
-    </div>
-    
-    <div class="item">
-      <img src="Dudu1.png" alt="Dudu">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="fa fa-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<a href="#page3" id="down2"><i class="fa fa-chevron-circle-down"></i></a>
+<a href="#page1" id="up2"><i class="fa fa-chevron-circle-up"></i></a>
 </div>
-
+<div class="page page-3" id="page3">
+<div class="content content-3">
+<h1>Because...</h1>
+<h3>it's about your goals</h3>
+<h5 class="black">and your user's goals - not my prowess</h5>
+</div>
+<a href="#page4" id="down3"><i class="fa fa-chevron-circle-down" ></i></a>
+<a href="#page2" id="up3"><i class="fa fa-chevron-circle-up" ></i></a>
+</div>
+<div class="page page-4">
+<div class="content content-4">
+<h1>contact me</h1>
+<h3>If you think I can help materialize your vision</h3>
+<a href="#"><h3 class="purple"><i class="fa fa-envelope-o"></i></h3></a>
+</div>
 </div>
 </body>
 </html>
