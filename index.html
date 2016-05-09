@@ -1,158 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Sbonakaliso's Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css">
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-	 <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<style type="text/css">
-	body{
-		text-align: center;
-		background: black;
-		overflow: hidden;
-	}
-	.content{
-		position: absolute;
-		width: 100%;
-		transform:rotate(-5deg);
-	}
-	.content-1{
-		top: 20vh;
-	}
-	.content-2{
-		top: 120vh;
-	}
-	.content-3{
-		top: 220vh;
-	}
-	.content-4{
-		top: 320vh;
-	}
-	h1{
-		color: inherit;
-	}
-	h3{
-		color: inherit;
-	}
-	h4{
-		color: rgb(128,0,128);
-	}
-	.green{
-		color: rgb(0,128,0);
-	}
-	.white{
-		color: rgb(255,255,255);
-	}
-	.black{
-		color: rgb(0,0,0);
-	}
-	.purple{
-		color: rgb(128,0,128);
-	}
-	a{
-		font-size: 300%;
-		position: absolute;
-		color: inherit;
-	}
-	.fa-chevron-circle-down{
-		color: inherit;
-	}
-	.fa-chevron-circle-up{
-		left: 1em;
-		color: inherit;
-	}
-	.page{
-		height: 100vh;
-	}
-	.page-1{
-		top: 0vh;
-		background: black;
-		color: rgb(128,0,128);
-	}
-	.page-2{
-		background: rgb(0,128,0);
-		color: rgb(0,0,0);
-	}
-	.page-3{
-		background: rgb(128,0,128);
-		color: rgb(255,255,255);
-	}
-	.page-4{
-		background: rgb(255,255,255);
-		color: rgb(0,128,0);
-	}
-	#down1{
-		top: 80vh;
-		right: 1em;
-	}
-	#down2{
-		top: 180vh;
-		right: 1em;
-	}
-	#up2{
-		top: 180vh;
-		left: 1em;
-	}
-	#down3{
-		top: 280vh;
-		right: 1em;
-	}
-	#up3{
-		top: 280vh;
-		left: 1em;
-	}
-	#up4{
-		top: 380vh;
-		left: 1em;
-	}
-	</style>
-<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200' rel='stylesheet' type='text/css'>
-
+<title>HTML5, CSS3 and JavaScript demo</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
+  <style>
+    html{
+      overflow-x: hidden;
+    }
+    html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+    body{
+      background: rgb(0,128,128);
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+      color: rgb(0,255,255);
+    }
+    span{
+      color: rgb(255,255,255);
+    }
+    header{
+      text-align: center;
+    }
+    .motto{
+      color: rgb(255,255,255);
+      font-size: 1.2em;
+    }
+    .text{
+      color: rgb(0,255,255);
+      text-align: center;
+      margin-top: 2em;
+      font-size: 1.2em;
+    }
+    img{
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+    }
+    .col-sm-3{
+      background: black;
+      height: 13em;
+      background-size: 100%;
+    }
+    .row{
+      margin: 0;
+      margin-top: 5em;
+      width: 100%;
+    }
+    .sekos{
+      background-image: url("https://www.upwork.com/att/download/portfolio/persons/uid/704089515535253504/profile/projects/files/711737377859571712");
+    }
+    .attend{
+      background-image: url("https://www.upwork.com/att/download/portfolio/persons/uid/704089515535253504/profile/projects/files/709217371203215360");
+    }
+    .skibha{
+      background-image: url("https://www.upwork.com/att/download/portfolio/persons/uid/704089515535253504/profile/projects/files/709228290767646720"); 
+    }
+    .mentor{
+      background-image: url("https://www.upwork.com/att/download/portfolio/persons/uid/704089515535253504/profile/projects/files/709929315975622656");
+    }
+    footer{
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      color: #00FFFF;
+    }
+    footer>p{
+      text-align: right; 
+    }
+  </style>
 </head>
 <body>
-<div class="page page-1">
-<div class="content content-1" id="page1">
-<h1>I am Sbo</h1>
-<h3>Web developer</h3>
-<h5 class="green">HTML, CSS, Bootstrap, Javascript and jQuery</h5>
-</div>
-<a href="#page2" id="down1"><i class="fa fa-chevron-circle-down"></i></a>
-</div>
-<div class="page page-2" id="page2">
-<div class="content content-2">
-<h1>Listening...</h1>
-<h3>and paying attention to your needs</h3>
-<h5 class="white">Sets me apart</h5>
-</div>
-<a href="#page3" id="down2"><i class="fa fa-chevron-circle-down"></i></a>
-<a href="#page1" id="up2"><i class="fa fa-chevron-circle-up"></i></a>
-</div>
-<div class="page page-3" id="page3">
-<div class="content content-3">
-<h1>Because...</h1>
-<h3>it's about your goals</h3>
-<h5 class="black">and your user's goals - not my prowess</h5>
-</div>
-<a href="#page4" id="down3"><i class="fa fa-chevron-circle-down" ></i></a>
-<a href="#page2" id="up3"><i class="fa fa-chevron-circle-up" ></i></a>
-</div>
-<div class="page page-4" id="page4">
-<div class="content content-4">
-<h1>contact me</h1>
-<h3>If you think I can help materialize your vision</h3>
-<h3 class="purple"><i class="fa fa-envelope-o"></i></h3> 
-KuneneSbonakaliso@gmail.com
+<!-- Start your code here -->
+  <header><h1>Sbo<span>the</span>Dev</h1><p class="motto">Web Developer</p></header>
+<p class="text">Hi<br> I am an effient learnaholic developer who is skilled in HTML5, CSS3, Javascript, jQuery and Bootstrap.</p>
 
-</div>
-<a href="#page3" id="up4"><i class="fa fa-chevron-circle-up" ></i></a>
-</div>
+<p class="text">Here is some of my work</p>
+<div class="container-fluid"> 
+  <div class="row">
+<div class="col-sm-3 sekos"></div>
+<div class="col-sm-3 attend"></div>
+<div class="col-sm-3 skibha"></div>
+<div class="col-sm-3 mentor"></div>
+  </div>
+  </div>
+  
+  <footer><p>&copy;2016 SbotheDev</p></footer>
+<!-- End your code here -->
 </body>
 </html>
